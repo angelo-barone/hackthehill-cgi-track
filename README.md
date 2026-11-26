@@ -1,8 +1,18 @@
-# hackthehill-cgi-track
+# Northwind Complaint Triage Desk (Hack the Hill III)
+
+Team project from Hack the Hill III (CGI challenge), built in 38 hours. It is a tool for contact centre staff at a simulated utility, Northwind. It sorts every complaint by type and urgency, pulls the case history from five simulated company systems onto one screen, and drafts a reply that staff approve before anything is sent. An AI off switch runs the same steps on fixed rules.
+
+This is my copy of the team repository, [hashirjamal/hackthehill-cgi-track](https://github.com/hashirjamal/hackthehill-cgi-track), where the full commit history lives. `TEAM_BRIEF.md` explains the problem and the plan. All Northwind data is simulated challenge data.
+
+The team's setup notes follow.
+
+---
+
+## Setup notes
 
 FastAPI + SQLAlchemy backend, connected to Tiger Data (or any Postgres).
 
-## Setup
+### Setup
 
 Requires Python 3.10+ (the code uses `X | None` type hints). On macOS, the system `python3` is often
 3.9, which fails to import this code — check with `python3 --version` and use a newer interpreter
